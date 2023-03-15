@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<head>
+<style>
+* {margin:0; padding: 0; box-sizing: border-box;}
+ul,ol,li {list-style: none; margin: 0; padding: 0;}
+
+#warp {width: 100%; margin: 0 auto;}
+#headerwrap {width: 100%; height: 80px; top:0; left:0; background-color: #000;}
+header {width:80%; height: 80px; margin: 0 auto; display: flex; justify-content: space-around; align-items: center; position: relative; background-color: skyblue;}
+.logo {width: 130px; height:30px; background-color:#333; line-height: 1px; display: block;}
+nav {background-color: pink; display: block;}
+nav a:hover {color:#ec167f;}
+nav ul {display:flex; }
+nav ul li a {padding:15px; text-decoration:none; color:#eee; position: relative;}
+.a { background-color: aliceblue; width: 25px; height: 25px; display:block; float: right; }
+
+#slider {width: 100%; height: 700px; background-image: url("https://giseok-hong.github.io/Portfolio/web_pages/exhibiz/html/img/slider-img-2.jpg"); background-size: cover; display: flex; justify-content: center; align-items: center;  background-color: bisque; }
+#slider > .container {width: 1200px; margin: 0 auto; text-align: center; background-color: aquamarine;}
+#slider > .container > span { font-size: 19px; line-height: 60px; font-weight: bold; color: #883ff9;}
+#slider > .container > h1 { font-size: 56px; line-height: 60px; color: #eee; margin: 0;  opacity: 1px;}
+#slider > .container > .smalltext {margin: 40px 0; color: #ec167f; display: flex; justify-content: center; align-items: center; background-color: plum;}
+#slider > .container > .smalltext > img {background-color: aliceblue; width: 20px; height: 20px; display:block; float: left;}
+#slider > .container > .smalltext >span {font-size: 18px; color: #fff; margin:0 20px 0 5px; }
+button {font-size: 15px; color: #fff; background-color: #ec167f; padding: 10px 20px; border:none; cursor: pointer; letter-spacing: 3px; transition: 0.3s; opacity:1;}
+button:hover {opacity: 0.9;}
+
+main {width: 100%; height: 1000px; background-color: #000;}
+main > #content-countdown {width: 100%; height: 190px; background-color: floralwhite; }
+main > #content-countdown > .container {width: 1200px; height: 190px; margin: 0 auto; display: flex; justify-content: center; align-items: center; background-image: linear-gradient(120deg,#ec167f 0%,#883ff9 100% );}
+.itembox {width: 25%; text-align: center; display: flex; flex-direction: column; background-color: salmon;}
+.countdown > span {font-size: 50px; color:#fff;}
+span {font-size: 20px; color: #eee; text-align: center;}
+
+#section-about {width: 100%; background-color: skyblue; background-image: url("https://giseok-hong.github.io/Portfolio/web_pages/exhibiz/html/img/box2-back-1.png");}
+#section-about > .container {width: 1200px; height: 600px; margin: 0 auto; display: flex;
+align-items: center; background-color: sandybrown;}
+#section-about > .container > .left-box {width: 50%; background-color: silver;}
+#section-about > .container > .left-box > h2 {font-size: 32px; color:#fff}
+#section-about > .container > .left-box > p {font-size: 15px; color:#666; margin:30px 0 20px;}
+#section-about > .container > .left-box > button {font-size: 15px; color: #fff; background-color: #ec167f; padding: 10px 20px; border:none; cursor: pointer; letter-spacing: 3px; transition: 0.3s; opacity:1;}
+footer {}
+</style>
+</head>
+</head>
+<body>
+
+<div id="wrap">
+
+<!--header begin-->
+<div id="headerwrap">
+<header>
+<div class="logo">
+<a href="#"><img src="https://www.madebydesignesia.com/themes/exhibiz/images/logo.png" alt="logo"></a>
+</div>
+
+
+<nav clas="b">
+<ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">ABOUT</a></li>
+    <li><a href="#">SPEAKERS</a></li>
+    <li><a href="#">SCHEDULE</a></li>
+    <li><a href="#">TICKET</a></li>
+    <li><a href="#">SPONSORS</a></li>
+    <li><a href="#">REGISTER</a></li>
+    <li><a href="#"> <img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/align-justify-64.png" alt="logobar" class="a"></a></li>
+    
+</ul>
+</nav>
+
+</header>
+</div>
+</div>
+<!--section begin-->
+<div id="slider">
+<div class="container">
+<span>June 20, 2023</span>
+<h1>Creative Design</h1>
+<br>
+<h1>Expo 2023</h1>
+
+<div class="smalltext">
+<img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/calendar-64.png" alt="icon1">
+<span>June20th to 25th</span>
+
+<img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/user-64.png" alt="icon1">
+<span>12Speakers </span>
+
+<img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/map-pin-64.png" alt="icon1">
+<span>Palo Alto, California</span>
+</div>
+
+<button>GET TICKET</button>
+</div>
+</div>
+
+<!--content begin-->
+<main>
+<div id="content-countdown">
+<div class="container">
+<div class="itembox">
+    <span class="countdown">
+        <span>0</span>
+        <span>0</span>
+        <span>-</span>
+    </span>
+    <span>DAYS</span>
+</div>
+
+<div class="itembox">
+    <span class="countdown">
+        <span>0</span>
+        <span>-</span>
+    </span>
+    <span>HOURSS</span>
+</div>
+
+<div class="itembox">
+    <span class="countdown">
+        <span>0</span>
+        <span>-</span>
+    </span>
+    <span>MINUTES</span>
+</div>
+
+<div class="itembox">
+    <span class="countdown">
+        <span>0</span>
+        <span>-</span>
+    </span>
+    <span>SECONDS</span>
+</div>
+</div>
+</div>
+
+<div id="section-about">
+<div class="container">
+    <div class="left-box">
+<h2>Welcome to the Biggest
+    <br>
+    Creative Design Conference
+</h2>  
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+</p> 
+    <button><a href="#">THE SPEAKERS</a></button> 
+    </div>
+</div>
+</div>
+
+</main>
+
+<footer></footer>
+</div>
+</body>
+</html>
